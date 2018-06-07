@@ -1,0 +1,96 @@
+/*
+  Author: Eliecer Arteaga
+*/
+
+body{
+  background-color: #000;
+  font-family: 'Dancing Script';
+}
+#container-header{
+  margin: 0 auto;
+  width: 80%;
+  height: 100px;
+  background-color: #5b7989;
+  padding:0;
+
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+#siteName {
+  width: 50%;
+  display: inline-block;
+}
+#navBar{
+  width:50%;
+  display: inline-block;
+  text-align: right;
+  float:right;
+}
+#navBar ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 1.5em;
+
+}
+#siteName h1{
+  color: #fff;
+  text-shadow: 2px 2px #02010a;
+  text-align: left;
+}
+#container-content {
+  margin: 0 auto !important;
+  width: 80%;
+  height: auto: ;
+  background-color: yellow;
+}
+#content {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+div [class*="bloque"]{
+  min-height: 200px;
+  flex: 1 2 40%;
+}
+.bloque1{
+  color: #ddd;
+  order: 1;
+  display:flex;
+  flex: 1 100% !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+
+}
+.bloque2 {
+  color: #333;
+  order: 2;
+  align-self: center;
+  display:flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+
+}
+.bloque3 {
+  color: #333;
+  order: 3;
+  align-self: center;
+  display:flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+
+}
+
+figure {
+  display: inline;
+  margin:auto;
+}
