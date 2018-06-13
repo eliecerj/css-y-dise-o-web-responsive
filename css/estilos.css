@@ -8,7 +8,7 @@ body{
 }
 #container-header{
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
   height: 100px;
   background-color: #5b7989;
   padding:0;
@@ -38,6 +38,12 @@ body{
   font-size: 1.5em;
 
 }
+#navBar ul li a {
+  color: #fff;
+}
+/* #navBar ul li a:visited {
+  text-decoration: none;
+} */
 #siteName h1{
   color: #fff;
   text-shadow: 2px 2px #02010a;
@@ -45,9 +51,9 @@ body{
 }
 #container-content {
   margin: 0 auto !important;
-  width: 80%;
+  width: 70%;
   height: auto: ;
-  background-color: yellow;
+  //background-color: yellow;
 }
 #content {
   display: flex;
@@ -63,10 +69,17 @@ div [class*="bloque"]{
   order: 1;
   display:flex;
   flex: 1 100% !important;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   justify-content: center;
   align-items: center;
+  background-color: #82c3a6;
+
+}
+.bloque1 img {
+  width: 85%;
+  height: 90%;
+  box-shadow: 3px 3px #000;
 
 }
 .bloque2 {
@@ -74,23 +87,87 @@ div [class*="bloque"]{
   order: 2;
   align-self: center;
   display:flex;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color:  #d5c75f;
 
 
+}
+.bloque2 img, .bloque3 img {
+  width: 100%;
+  height;70%;
+  text-align: center;
+  border:1px solid #000;
+  box-shadow: 3px 3px #000;
 }
 .bloque3 {
   color: #333;
   order: 3;
   align-self: center;
   display:flex;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color:  #d5c75f;
+}
+#secondImage{
+  transition-property: transform;
+  transition-duration: 1.5s;
+}
+#secondImage:hover {
+  -ms-transform: rotate(15deg); /* IE 9 */
+	-webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+	transform: rotate(15deg);
+}
 
-
+#thirdImage{
+  transition-property: transform;
+  transition-duration: 1.5s;
+}
+#thirdImage:hover {
+  -ms-translate: rotate(15deg); /* IE 9 */
+	-webkit-translate: rotate(15deg); /* Chrome, Safari, Opera */
+	transform: translate(10px,-10px);
 }
 
 figure {
   display: inline;
-  margin:auto;
+  padding: 0 auto;
+}
+
+figcaption{
+  text-align: center;
+  font-size: 2em;
+}
+
+figcaption > a {
+
+  text-decoration: none;
+  color: #000;
+}
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.items .item {
+	flex: 1 0 25%;
+  box-sizing: border-box;
+  background: #e0ddd5;
+  color: #171e42;
+  padding: 10px;
+  text-align:left;
+
+}
+footer {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+}
+
+.noDots {
+  list-style-type: none;
+  padding-left: 0;
 }
