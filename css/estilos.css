@@ -167,7 +167,7 @@ figcaption > a {
 footer {
   width: 70%;
   margin: 0 auto;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
   -webkit-border-radius: 0 0 10px 10px;
   -moz-border-radius: 0 0 10px 10px;
 }
@@ -185,10 +185,10 @@ footer {
 .gridPicsContainer .pics {
 	flex: 1 0 33.33%;
   box-sizing: border-box;
-  //background: #e0ddd5;
+  background-color:  #d5c75f;
   color: #171e42;
-  //padding: 10px;
   align-self: center;
   text-align: center;
-
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
