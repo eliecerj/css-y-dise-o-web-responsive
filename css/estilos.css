@@ -192,3 +192,18 @@ footer {
   padding-top: 30px;
   padding-bottom: 20px;
 }
+
+.evenPics {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(100%);
+}
+
+.image1 {
+-webkit-filter: blur(10px);
+filter: blur(10px);
+}
+
+.image3 {
+-webkit-filter: sepia(90%);
+filter: sepia(90%);
+}
