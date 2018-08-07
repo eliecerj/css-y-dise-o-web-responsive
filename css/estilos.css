@@ -1,14 +1,28 @@
 /*
   Author: Eliecer Arteaga
 */
+/* Add animation (Chrome, Safari, Opera) */
+@-webkit-keyframes example {
+    from {top:-1000px;opacity: 0;}
+    to {top:0px;opacity:1;}
+}
 
-body{
+/* Add animation (Standard syntax) */
+@keyframes example {
+  from {top:-1000px;opacity: 0;}
+  to {top:0px;opacity:1;}
+}
+#prueba{
   background-color: #000;
   font-family: 'Dancing Script';
-  //transition-property: color;
-  //transition-duration: 1s;
+  margin: 0;
+  /* Add animation */
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 2s;
 }
-body:target{background-color: white; transform: translate(20);}
+
 #container-header{
   margin: 0 auto;
   width: 70%;
@@ -37,15 +51,16 @@ body:target{background-color: white; transform: translate(20);}
   list-style-type: none;
   display: inline;
   padding: 0 8px;
-  color: #fff;
   font-size: 1.5em;
-  transition:
-
 }
-/* #navBar ul li a {
-  color: #fff;
+#navBar ul li a {
+  color: white;
+}
+#navBar ul li a:target {
+  text-decoration: none;
+  //color:black;
+}
 
-} */
 /* #navBar ul li a:visited {
   text-decoration: none;
 } */
